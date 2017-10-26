@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ninja to Cat</title>
+    <link rel= "stylesheet" type= "text/css" href= "style.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        $("img").click(function() { 
+            var _this = $(this);
+            var current = _this.attr("src");
+            var swap = _this.attr("data-alt-src");     
+          _this.attr('src', swap).attr("data-alt-src",current);   
+     });
+ 
+});
+    </script>  
+</head>
+
+<body>
+    <div class= "wrapper">
+        <div class= "grid1">
+        <img class="ninjas" src="images/ninja0.png" data-alt-src='images/cat0.png' />
+        </div>
+
+        <div class= "grid2">
+        <img class="ninjas" src="images/ninja1.png" data-alt-src='images/cat1.png' />
+
+        </div>      
+
+        <div class= "grid3">
+        <img class="ninjas" src="images/ninja2.png" data-alt-src='images/cat2.png' />
+        </div>
+
+        <div class= "grid4">
+        <img class="ninjas" src="images/ninja3.png" data-alt-src='images/cat3.png' />
+        </div>
+
+        <div class= "grid5">
+        <img class="ninjas" src="images/ninja4.png" data-alt-src='images/cat4.png' />
+        </div>
+    </div> 
+</body>
+
+</html>
